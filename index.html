@@ -25,6 +25,10 @@
             max-width:800px;
             margin:0 auto;
             padding:16px;
+            display:flex;
+        }
+       .artigo-autor{
+            font-weight: bold;
         }
     </style>
 
@@ -35,11 +39,21 @@
         <div>
             <h1>Vôlei de Quadra: primeiros passos</h1>
             <p>Tudo o que você precisa saber para dar os primeiros passos no vôlei de quadra.</p>
+            <button>🏐 ,<span>1</span></button>
         </div>
     </header>   
     <main>
         <h2>Fundamentos do Vôlei de Quadra</h2>
-        <p>Os fundamentos básicos do voleibol são saque, recepção e levantamento, além do ataque e do bloqueio. Eles formam as técnicas essenciais para jogar e controlar a bola durante a partida.</p>
+        <p class="artigo-autor">Os fundamentos básicos do voleibol são saque, recepção e levantamento, além do ataque e do bloqueio. Eles formam as técnicas essenciais para jogar e controlar a bola durante a partida.</p>
     </main>
 </body>
+<script>
+    const botao = document.querySelector ("button")
+    botao.addEventListener("click", botaoClicado)
+
+    function botaoClicado(){
+        console.log("fui clicado")
+        let texto 
+    }
+</script>
 </html>
